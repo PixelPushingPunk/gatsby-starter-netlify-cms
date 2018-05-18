@@ -47,30 +47,43 @@ export default class Contact extends React.Component {
               Don’t fill this out: <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          <p>
-            <label>
-              Your name:<br />
-            <input type="text" name="name" onChange={this.handleChange}/>
-            </label>
-          </p>
-          <p>
-            <label>
-              Your phone:<br />
-              <input type="text" name="phone" onChange={this.handleChange}/>
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange}/>
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:<br />
-              <textarea name="message" onChange={this.handleChange}/>
-            </label>
-          </p>
+
+          <div className="field">
+            <div className="control">
+              <label>
+                Your name:<br />
+                <input className="input is-medium" type="text" name="name" onChange={this.handleChange}/>
+              </label>
+            </div>
+          </div>
+        
+          <div className="field">
+            <div className="control">
+              <label>
+                Your phone:<br />
+                <input className="input is-medium" type="text" name="phone" onChange={this.handleChange}/>
+              </label>
+            </div>
+          </div>
+
+          <div className="field">
+            <div className="control">
+              <label>
+                Your email:<br />
+                <input className="input is-medium" type="text" name="email" onChange={this.handleChange}/>
+              </label>
+            </div>
+          </div>
+
+          <div className="field">
+            <div className="control">
+              <label>
+                Message:<br />
+                <textarea className="textarea is-medium" name="message" onChange={this.handleChange}/>
+              </label>
+            </div>
+          </div>
+
           <p>
             <button type="submit">Send</button>
           </p>
